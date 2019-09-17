@@ -1,7 +1,7 @@
 node {
 
 	def lib = library (
-		identifier: 'simple-lib@temp', 
+		identifier: 'simple-lib@master', 
 		retriever: 
 			modernSCM([
 				$class: 'GitSCMSource', 
