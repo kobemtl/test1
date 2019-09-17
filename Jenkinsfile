@@ -5,15 +5,15 @@ node {
 		retriever: 
 			modernSCM([
 				$class: 'GitSCMSource', 
-				credentialsId: '92bb99b8-238f-4f06-8386-b45861c9dd76', 
-				id: '42de5809-9017-4717-90f7-1e55cd53e5f7', 
-				remote: 'git@github.com:aleksei-bulgak/jenkins-shared-library-example.git', 
+				credentialsId: 'sshkeygithub', 
+				id: 'sshkeygithub', 
+				remote: 'git@github.com:kobemtl/test1.git', 
 				traits: [[$class: 'jenkins.plugins.git.traits.BranchDiscoveryTrait']]
 			])
 	)
     stage("Checkout class"){
         lib.by.bulgak.jenkins.lib.Checkout.new().checkout(
-            "git@github.com:aleksei-bulgak/jenkins-shared-library-example.git",
+            "git@github.com:kobemtl/test1.git",
             "master"
         );
     }

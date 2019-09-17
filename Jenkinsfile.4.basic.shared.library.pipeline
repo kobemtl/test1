@@ -8,7 +8,7 @@ node {
 	)
 
     lib.by.bulgak.jenkins.lib.Checkout.new().checkout(
-        "git@github.com:aleksei-bulgak/jenkins-shared-library-example.git",
+        "git@github.com:kobemtl/test1.git",
         "master"
     );
 
